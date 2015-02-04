@@ -1,5 +1,6 @@
 package com.example.abhi.show;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.app.usage.UsageEvents;
@@ -9,6 +10,7 @@ import android.content.Intent;
 import android.gesture.Gesture;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.inputmethodservice.Keyboard;
 import android.location.Address;
 import android.location.Geocoder;
@@ -21,7 +23,6 @@ import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -44,6 +45,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.actionbarsherlock.app.SherlockFragment;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 
@@ -62,6 +64,8 @@ import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.ProgressCallback;
 import com.parse.SaveCallback;
+import com.shamanland.fonticon.FontIconDrawable;
+import com.shamanland.fonticon.FontIconTypefaceHolder;
 import com.squareup.picasso.Picasso;
 
 
@@ -79,7 +83,7 @@ import butterknife.InjectView;
 import de.greenrobot.event.EventBus;
 import jp.wasabeef.picasso.transformations.CropSquareTransformation;
 
-public class MainActivity extends ActionBarActivity implements GoogleApiClient.ConnectionCallbacks,GoogleApiClient.OnConnectionFailedListener{
+public class MainActivity extends Activity implements GoogleApiClient.ConnectionCallbacks,GoogleApiClient.OnConnectionFailedListener{
 
     private ProgressDialog progressDialog;
 
@@ -119,12 +123,12 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
 
         FetchShowsInfo();
 
-        if(savedInstanceState == null) {
+        /*if(savedInstanceState == null) {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             fragment = new RecyclerFragment();
             transaction.replace(R.id.sample_content_fragment, fragment);
             transaction.commit();
-        }
+        }*/
 
         //CheckSwipeGestures();
 
@@ -136,6 +140,7 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
 
         mGoogleApiClient.connect();
 
+        Drawable icon = FontIconDrawable.inflate(getResources(),R.xml.icon_code);
     }
 
     @Override
@@ -314,8 +319,8 @@ public class MainActivity extends ActionBarActivity implements GoogleApiClient.C
                         show.setFileurl(fileObject.getUrl());
                         sDataSet.add(show);
                     }
-                    DisplayShowInfo(curShow);
-                    fragment.getData(sDataSet.get(curShow).getId());
+                    //DisplayShowInfo(curShow);
+                    //fragment.getData(sDataSet.get(curShow).getId());
                 }
                 else{
                     Log.e("Error",e.getMessage());

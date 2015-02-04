@@ -143,10 +143,19 @@
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:id="@+id/myEntry"
-                android:layout_alignParentEnd="true"
+                android:layout_alignParentEnd="false"
                 android:adjustViewBounds="false"
                 android:src="@drawable/image" />
         </RelativeLayout>
+
+        <com.shamanland.fonticon.FontIconView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_camera"
+            android:textSize="@dimen/icon_size"
+            android:textColor="@color/red"
+            android:clickable="true"
+            />
 
         <FrameLayout
             android:id="@+id/sample_content_fragment"

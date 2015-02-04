@@ -1,6 +1,7 @@
 package com.example.abhi.show;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -8,7 +9,6 @@ import android.os.Handler;
 import android.os.PersistableBundle;
 import android.os.SystemClock;
 import android.provider.MediaStore;
-import android.support.v7.app.ActionBarActivity;
 import android.text.InputType;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -42,7 +42,7 @@ import butterknife.InjectView;
 /**
  * Created by abhi on 21/01/15.
  */
-public class EntryActivity extends ActionBarActivity {
+public class EntryActivity extends Activity{
 
     @InjectView(R.id.entryView) protected ImageView entryView;
     @InjectView(R.id.commentBox) protected EditText commentBox;

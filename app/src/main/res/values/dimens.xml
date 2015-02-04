@@ -4,4 +4,5 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="card_insets">-10dp</dimen>
     <dimen name="card_insets2">-8dp</dimen>
+    <dimen name="icon_size">18dp</dimen>
 </resources>

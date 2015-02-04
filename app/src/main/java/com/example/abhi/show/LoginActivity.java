@@ -1,5 +1,6 @@
 package com.example.abhi.show;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -8,7 +9,6 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
@@ -42,7 +42,7 @@ import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 
-public class LoginActivity extends ActionBarActivity {
+public class LoginActivity extends Activity {
 
     @InjectView(R.id.loginMsg) protected TextView loginMsg;
     private Dialog progressDialog;

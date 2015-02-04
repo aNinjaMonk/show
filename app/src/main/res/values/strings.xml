@@ -20,5 +20,5 @@
     <string name="gender">Gender</string>
     <string name="emailFetch">Enter</string>
     <string name="callForGroup">Your School Email</string>
-
+    <string name="ic_android">Icons</string>
 </resources>
