@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.facebook.widget.ProfilePictureView
+        android:id="@+id/userProfilePicture"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        facebook:preset_size="large" />
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:textColor="#333"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/groupBox"
+        android:layout_gravity="center"
+        android:layout_below="@+id/userName"
+        android:hint="@string/callForGroup"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/groupFetchBtn"
+        android:layout_below="@+id/loveBtn"
+        android:text="@string/emailFetch"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:onClick="groupFetchBtnListener" />
+
+    <TextView
+        android:id="@+id/groupMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"
+        android:textSize="16sp" />
+
+</LinearLayout>

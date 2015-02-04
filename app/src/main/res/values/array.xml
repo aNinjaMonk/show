@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="promote_options">
+        <item>Facebook</item>
+        <item>Whatsapp</item>
+    </array>
+
+</resources>
