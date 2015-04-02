@@ -124,7 +124,7 @@ public class LoginActivity extends Activity {
         startActivity(intent);
     }
     private void showHome(){
-        Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+        Intent intent = new Intent(getApplicationContext(),ShowActivity.class);
         startActivity(intent);
     }
 

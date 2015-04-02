@@ -75,6 +75,11 @@
             android:label="@string/title_activity_user_details"
             android:screenOrientation="portrait">
         </activity>
+        <activity
+            android:name=".ShowActivity"
+            android:label="@string/title_activity_user_details"
+            android:screenOrientation="portrait">
+        </activity>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"

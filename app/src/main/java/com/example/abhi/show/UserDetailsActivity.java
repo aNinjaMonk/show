@@ -24,9 +24,7 @@ import org.json.JSONObject;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-
 public class UserDetailsActivity extends Activity {
-
     @InjectView(R.id.userProfilePicture) protected ProfilePictureView userProfilePictureView;
     @InjectView(R.id.userName) protected TextView userNameView;
     @InjectView(R.id.userGender) protected TextView userGenderView;

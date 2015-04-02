@@ -3,13 +3,16 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 21
     buildToolsVersion "21.1.2"
-
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
     defaultConfig {
-        applicationId "com.example.abhi.myapplication"
-        minSdkVersion 11
+        applicationId 'com.example.abhi.show'
+        minSdkVersion 15
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -17,12 +20,14 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    productFlavors {
+    }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(dir: 'libs', include: ['Parse-*.jar'])
+    androidTestCompile 'junit:junit:4.11'
     compile 'com.parse.bolts:bolts-android:1.+'
-    compile fileTree(dir: 'libs', include: 'Parse-*.jar')
     compile 'com.google.android.gms:play-services:6.5.87'
     compile 'de.hdodenhof:circleimageview:1.2.1'
     compile 'com.android.support:recyclerview-v7:21.0.3'
@@ -39,5 +44,9 @@ dependencies {
     compile 'com.shamanland:fonticon:0.1.6'
     compile 'com.actionbarsherlock:actionbarsherlock:4.4.0@aar'
     compile 'com.android.support:support-v4:18.0.+'
-    compile 'com.jakewharton.espresso:espresso:1.1-r3'
+    compile 'com.android.support:support-annotations:21.0.3'
+
+    androidTestCompile 'com.google.android:android:4.1.1.4'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
+    androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
 }

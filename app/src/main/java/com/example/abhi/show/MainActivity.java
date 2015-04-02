@@ -139,8 +139,6 @@ public class MainActivity extends Activity implements GoogleApiClient.Connection
                 .build();
 
         mGoogleApiClient.connect();
-
-        Drawable icon = FontIconDrawable.inflate(getResources(),R.xml.icon_code);
     }
 
     @Override

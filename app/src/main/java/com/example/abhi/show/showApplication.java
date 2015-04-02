@@ -21,5 +21,4 @@ public class showApplication extends Application {
 
         FontIconTypefaceHolder.init(getAssets(), "icons.ttf");
     }
-
 }
