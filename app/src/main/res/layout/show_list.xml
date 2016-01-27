@@ -7,18 +7,20 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/showTitle"
-            android:gravity="center_horizontal|bottom" />
-
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/showBrief"
             android:layout_gravity="center_vertical"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showTitle"
+            android:gravity="center_horizontal|bottom"
+            android:layout_centerHorizontal="true" />
 
     </RelativeLayout>
 

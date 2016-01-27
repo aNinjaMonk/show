@@ -4,5 +4,13 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="card_insets">-10dp</dimen>
     <dimen name="card_insets2">-8dp</dimen>
-    <dimen name="icon_size">18dp</dimen>
+
+    <dimen name="icon_size">24sp</dimen>
+    <dimen name="drawer_size">30sp</dimen>
+    <dimen name="icon_big_size">40sp</dimen>
+    <dimen name="btn_radius">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="menuItem_size">16sp</dimen>
+
 </resources>

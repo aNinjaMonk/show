@@ -1,90 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.abhi.show" >
+    package="com.show">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <compatible-screens>
-        <!-- all small size screens -->
-        <screen android:screenSize="small" android:screenDensity="ldpi" />
-        <screen android:screenSize="small" android:screenDensity="mdpi" />
-        <screen android:screenSize="small" android:screenDensity="hdpi" />
-        <screen android:screenSize="small" android:screenDensity="xhdpi" />
-        <!-- all normal size screens -->
-        <screen android:screenSize="normal" android:screenDensity="ldpi" />
-        <screen android:screenSize="normal" android:screenDensity="mdpi" />
-        <screen android:screenSize="normal" android:screenDensity="hdpi" />
-        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
-    </compatible-screens>
 
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="18" />
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
 
     <application
-        android:name=".showApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
-        <receiver android:name=".NetworkStateReceiver" >
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activity.LoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.facebook.LoginActivity"
-            android:label="@string/title_activity_login"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name="com.example.abhi.show.MainActivity"
-            android:label="@string/app_name"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".EntryActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/title_activity_entry"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".UserDetailsActivity"
-            android:label="@string/title_activity_user_details"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".GroupActivity"
-            android:label="@string/title_activity_user_details"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity
-            android:name=".ShowActivity"
-            android:label="@string/title_activity_user_details"
-            android:screenOrientation="portrait">
-        </activity>
-
+            android:screenOrientation="portrait"></activity>
         <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/app_id" />
-
+            android:name="io.fabric.ApiKey"
+            android:value="8f8293045711152819832fc3ee62977d70e80776" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_settings"></activity>
     </application>
 
 </manifest>

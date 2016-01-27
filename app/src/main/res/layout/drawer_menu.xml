@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.5">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:baselineAligned="false"
+        android:gravity="bottom"
+        android:layout_weight="0.5">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+        <com.shamanland.fonticon.FontIconTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:gravity="center|center_horizontal"
+            android:textStyle="normal"
+            android:id="@+id/share"
+            android:textSize="@dimen/menuItem_size"
+            android:layout_gravity="center_horizontal"
+            android:enabled="true"
+            android:clickable="true"
+            android:onClick="menuItemClicked"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="bottom">
+
+            <com.shamanland.fonticon.FontIconTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/support"
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal"
+                android:textStyle="normal"
+                android:id="@+id/support"
+                android:textSize="@dimen/menuItem_size"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="menuItemClicked"
+                android:textColor="@color/black" />
+
+            <com.shamanland.fonticon.FontIconTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/setting"
+                android:layout_weight="0.33"
+                android:gravity="center_horizontal"
+                android:textStyle="normal"
+                android:id="@+id/setting"
+                android:textSize="@dimen/menuItem_size"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="menuItemClicked"
+                android:textColor="@color/black" />
+
+            <com.shamanland.fonticon.FontIconTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/logout"
+                android:gravity="center_horizontal"
+                android:textStyle="normal"
+                android:id="@+id/logout"
+                android:textSize="@dimen/menuItem_size"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.33"
+                android:enabled="true"
+                android:clickable="true"
+                android:onClick="menuItemClicked"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
