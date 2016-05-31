@@ -2,13 +2,32 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.show">
 
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="com.bahikhata.permission.C2D_MESSAGE" />
 
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
+
+    <permission
+        android:name="com.bahikhata.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
 
     <application
         android:name=".MyApplication"
@@ -17,25 +36,31 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.LoginActivity"
+            android:name=".activities.LoginActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="qmfrUeEE4DwJUaaQXielogYSvuc1l7ftwQokFxp5" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="uUqOs1StHFhC8V051Pm680D0ceXOV4WGPgPIfzQR" />
         <activity
-            android:name=".activity.MainActivity"
-            android:label="@string/title_activity_entry"
-            android:screenOrientation="portrait"></activity>
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" />
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="8f8293045711152819832fc3ee62977d70e80776" />
         <activity
-            android:name=".activity.SettingsActivity"
-            android:label="@string/title_settings"></activity>
+            android:name=".activities.SettingsActivity" />
+        <activity
+            android:name=".activities.LaunchActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -2,6 +2,6 @@
 <font-icon
     xmlns:android="http://schemas.android.com/apk/res-auto"
     android:text="@string/icon_support"
-    android:textSize="@dimen/icon_size"
-    android:textColor="@color/icons"
+    android:textSize="@dimen/drawer_size"
+    android:textColor="@color/black"
     />

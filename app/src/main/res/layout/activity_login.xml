@@ -22,17 +22,6 @@
         android:textColor="@color/accent"
         android:id="@+id/appname" />
 
-    <TextView
-        android:text="@string/tagline"
-        android:textSize="18sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textColor="@color/accent"
-        android:id="@+id/tagline"
-        android:layout_below="@+id/appname"
-        android:textStyle="italic" />
-
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"

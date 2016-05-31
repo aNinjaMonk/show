@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">#showtime</string>
+    <string name="app_name">show</string>
     <string name="app_id">1555447941362102</string>
-    <string name="parse_appID">9Udpp12NvdbvZ8OaiAgJ2DhEmWdiZuRHBFdnyy2K</string>
-    <string name="parse_clientID">wsBUV0tgGbMm8H9afQCyzjcIXbXCnPkz3e6Uj6hN</string>
+
+    <string name="helpshift_apiKey">5fe7b75cbd09f1353fcb5a89821e12a4</string>
+    <string name="helpshift_domain">bahikhata.helpshift.com</string>
+    <string name="helpshift_appId">bahikhata_platform_20150527081846916-a2683260529c87a</string>
+    <string name="digits_Key">1we7ajMFuQBLup8BqOF5DwEeY</string>
+    <string name="digits_secret">v9kFy165m05tR0DZXj8nsmbgjBceAnJ7etTmWYoeOWUEfhKwMg</string>
+    <string name="pusher_client">4eab6a3ddfcb7f77533a</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -27,15 +32,18 @@
     <string name="login_btn">Start</string>
     <string name="logging_out">Logging Out</string>
 
-    <string name="icon_menu">c</string>
-    <string name="icon_logout">s</string>
+    <string name="icon_menu">i</string>
+    <string name="icon_logout">f</string>
     <string name="icon_setting">q</string>
-    <string name="icon_share">j</string>
-    <string name="icon_support">g</string>
-    <string name="icon_write">a</string>
+    <string name="icon_share">e</string>
+    <string name="icon_support">d</string>
+    <string name="icon_write">g</string>
     <string name="icon_back">i</string>
     <string name="icon_notify">n</string>
     <string name="icon_yes">h</string>
+    <string name="icon_calc">c</string>
+    <string name="icon_down">b</string>
+    <string name="icon_add">a</string>
 
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
@@ -49,62 +57,7 @@
     <string name="share_title">Tell your friends</string>
     <string name="title_settings">Settings</string>
 
-    <!-- Strings related to Settings -->
-
-    <!-- Example General settings -->
-    <string name="pref_header_general">General</string>
-
-    <string name="pref_title_social_recommendations">Enable social recommendations</string>
-    <string name="pref_description_social_recommendations">Recommendations for people to contact
-        based on your message history
-    </string>
-
-    <string name="pref_title_display_name">Display name</string>
-    <string name="pref_default_display_name">John Smith</string>
-
-    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
-    <string-array name="pref_example_list_titles">
-        <item>Always</item>
-        <item>When possible</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_example_list_values">
-        <item>1</item>
-        <item>0</item>
-        <item>-1</item>
-    </string-array>
-
-    <!-- Example settings for Data & Sync -->
-    <string name="pref_header_data_sync">Data &amp; sync</string>
-
-    <string name="pref_title_sync_frequency">Sync frequency</string>
-    <string-array name="pref_sync_frequency_titles">
-        <item>15 minutes</item>
-        <item>30 minutes</item>
-        <item>1 hour</item>
-        <item>3 hours</item>
-        <item>6 hours</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_sync_frequency_values">
-        <item>15</item>
-        <item>30</item>
-        <item>60</item>
-        <item>180</item>
-        <item>360</item>
-        <item>-1</item>
-    </string-array>
-
-    <string name="pref_title_system_sync_settings">System sync settings</string>
-
-    <!-- Example settings for Notifications -->
-    <string name="pref_header_notifications">Notifications</string>
-
-    <string name="pref_title_new_message_notifications">New message notifications</string>
-
-    <string name="pref_title_ringtone">Ringtone</string>
-    <string name="pref_ringtone_silent">Silent</string>
-
-    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="language">en</string>
+    <string name="country">in</string>
 
 </resources>
